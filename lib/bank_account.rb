@@ -4,7 +4,7 @@ class BankAccount
 
  def initialize(name)
    @name = name
-   @balance = $1000
+   @balance = 1000
    @status = 'open'
  end
 
@@ -13,7 +13,7 @@ class BankAccount
  end
 
  def display_balance
-   "Your balance is #{@balance}."
+   "Your balance is #{$@balance}."
  end
 
  def valid?
